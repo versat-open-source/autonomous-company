@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Versat SDD proposal metadata
+type: object
+additionalProperties: false
+required: [change, status, owner, summary]
+properties:
+  change:
+    type: string
+    pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+  status:
+    enum: [draft, proposed, accepted, rejected, implemented, archived]
+  owner:
+    type: string
+    minLength: 1
+  summary:
+    type: string
+    minLength: 1
+  risk:
+    enum: [low, medium, high]

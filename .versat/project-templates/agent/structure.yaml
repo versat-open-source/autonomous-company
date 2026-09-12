@@ -1,0 +1,12 @@
+schema_version: 1
+profile: agent
+extends: [base]
+directories:
+  - agents
+  - skills
+  - workflows
+  - evals
+  - tests
+  - docs/architecture
+  - specs/product
+  - specs/changes

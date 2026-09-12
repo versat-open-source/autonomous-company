@@ -1,0 +1,30 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Versat SDD task collection
+type: object
+additionalProperties: false
+required: [change, tasks]
+properties:
+  change:
+    type: string
+  tasks:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [id, description, requirements, status]
+      properties:
+        id:
+          type: string
+          pattern: '^TASK-[0-9]{3,}$'
+        description:
+          type: string
+          minLength: 1
+        requirements:
+          type: array
+          minItems: 1
+          items:
+            type: string
+            pattern: '^REQ-[0-9]{3,}$'
+        status:
+          enum: [pending, in-progress, blocked, completed]

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "harness": {
+    "version": "0.2.0",
+    "commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f"
+  },
+  "resolved_at": "2026-09-12",
+  "standards": [
+    {
+      "path": "core/language.md",
+      "version": "0.2.0",
+      "digest": "sha256:d733e54e7a7671eca6d748aba4ab78f4a0337e37f2ba4956378f6b2869fcca43"
+    },
+    {
+      "path": "core/documentation.md",
+      "version": "0.2.0",
+      "digest": "sha256:eb385b7a6baa1c6007affcb4bb4f9101c9e430bb1277fc5607b4c5475c1d8052"
+    },
+    {
+      "path": "core/git.md",
+      "version": "0.2.0",
+      "digest": "sha256:3aae74a5c2c8818d6abcf3161ee99eeb7501abdab61ddfe11bc1d8f357577b07"
+    },
+    {
+      "path": "core/security.md",
+      "version": "0.2.0",
+      "digest": "sha256:c16c9832ba9ae5a9b9673289b2c56df709873a1566ecfa52918735357dd096f8"
+    },
+    {
+      "path": "core/testing.md",
+      "version": "0.2.0",
+      "digest": "sha256:adcd46c51e4b11f63fdc91a0577fa4987254f3f9a95a57a56f707feb8612b69e"
+    },
+    {
+      "path": "core/observability.md",
+      "version": "0.2.0",
+      "digest": "sha256:a1dbb2936bda6eec0a7d42d4af2e910cb0f1b8e3a08f6f3fb7d8af71f6e83096"
+    },
+    {
+      "path": "core/ai.md",
+      "version": "0.2.0",
+      "digest": "sha256:d9b0864fe2fc6d602c424fef4d43ce87990a870effb97afb464d461c1bc296c8"
+    },
+    {
+      "path": "profiles/agent.md",
+      "version": "0.2.0",
+      "digest": "sha256:443ef12472f4621907c71efac492eb1eb664fbb4ace26f58b34ed4552a6e3f48"
+    },
+    {
+      "path": "domains/finance.md",
+      "version": "0.2.0",
+      "digest": "sha256:33921aee357df52169511066d20b59e615b5147ab6829ff6bd77f33de94c6840"
+    },
+    {
+      "path": "technologies/python.md",
+      "version": "0.2.0",
+      "digest": "sha256:d4ae5ad21c365984c2a720ae35beaddd18276ef5b05648dad9dd02395f79289f"
+    }
+  ]
+}

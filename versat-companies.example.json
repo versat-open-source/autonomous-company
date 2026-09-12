@@ -1,0 +1,10 @@
+{
+  "companies": [
+    {
+      "name": "REPLACE_WITH_COMPANY_NAME",
+      "document_type": "REPLACE_WITH_DOCUMENT_TYPE",
+      "document": "REPLACE_WITH_DOCUMENT_NUMBER",
+      "mcp_connection": "REPLACE_WITH_MCP_CONNECTION"
+    }
+  ]
+}
