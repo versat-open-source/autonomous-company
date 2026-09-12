@@ -10,7 +10,13 @@ The installed Harness 0.2.0 validation entry point failed because its compatibil
 
 ## Repository controls
 
-Public repository creation, bootstrap PR, protected `main`, required `validate` check, CODEOWNERS review, secret scanning, push protection and private vulnerability reporting: pending remote setup and verification.
+- Public repository: https://github.com/versat-open-source/autonomous-company.
+- Bootstrap PR: https://github.com/versat-open-source/autonomous-company/pull/1. The full project is on `bootstrap/project-bootstrap`; `main` contains the seed `.gitignore` until review and merge.
+- CI passed for bootstrap commit `fa22965`: [push run](https://github.com/versat-open-source/autonomous-company/actions/runs/34713957275) and [PR run](https://github.com/versat-open-source/autonomous-company/actions/runs/34713957336). The PR check list is authoritative for later evidence-only commits.
+- `main` protection verified: required `validate` check with an up-to-date branch, one approving review, stale approval dismissal, CODEOWNERS review, conversation resolution and linear history; protections apply to administrators. Force pushes and branch deletion are disabled.
+- CODEOWNERS is included in the bootstrap PR and becomes the base-branch ownership file after merge. No organization teams existed at bootstrap; the maintainer is the initial code owner.
+- Secret scanning, secret push protection, vulnerability alerts and private vulnerability reporting were enabled and verified. Dependabot monthly update configuration is included in the PR and becomes active after merge.
+- Both initial commits (70 file versions) were checked for local company names, identifiers and connection names. No matches were found; the real mapping was never committed. Public commits use the maintainer's GitHub noreply address.
 
 ## Operational gates
 

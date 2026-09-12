@@ -1,6 +1,6 @@
 ---
 change: project-bootstrap
-status: accepted
+status: implemented
 owner: versat-open-source
 summary: Establish a public, governed agent repository with private local company routing.
 risk: high
