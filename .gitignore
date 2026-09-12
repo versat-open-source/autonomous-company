@@ -1,0 +1,18 @@
+# Private per-installation routing configuration.
+/versat-companies.local.json
+
+# Local environments, credentials and generated output.
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+*.log
+coverage/
+dist/
+build/
+tmp/
+# Local macOS metadata.
+.DS_Store
