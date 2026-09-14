@@ -1,0 +1,149 @@
+{
+  "harness_version": "0.2.0",
+  "harness_commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f",
+  "template_modules": [
+    "base",
+    "agent"
+  ],
+  "snapshot_publication_authorized": "2026-09-12",
+  "artifacts": [
+    {
+      "path": ".versat/standards/index.yaml",
+      "source_path": "standards/index.yaml",
+      "sha256": "47f312606a1ae428c6e4a68a3803490eea32eb42a7ee8011e07017ae9c44b0d0",
+      "git_blob": "190924cfce93e8b0720c43ca9c9fad9b727a7c4e"
+    },
+    {
+      "path": ".versat/schemas/project.schema.yaml",
+      "source_path": "schemas/project.schema.yaml",
+      "sha256": "535d0f478e504c941ae7fc5adcf3877c79a30506481384c2f34b182394382eae",
+      "git_blob": "48f7493673b29329862e51e614623dd992010ab9"
+    },
+    {
+      "path": ".versat/schemas/standards.schema.yaml",
+      "source_path": "schemas/standards.schema.yaml",
+      "sha256": "c9bd310ac1db52c6acd7ea7c808800c200b9aecf988c3e95800e931af2dbfae1",
+      "git_blob": "78d0107a05b8e2a702664ad34e3188c4f663c9b9"
+    },
+    {
+      "path": ".versat/project-templates/agent/structure.yaml",
+      "source_path": "project-templates/agent/structure.yaml",
+      "sha256": "27b63b9f084c011219fb436398fce6ff671565640d86b9db62c191d581b7a356",
+      "git_blob": "8ef2d6de380bb0c02ac50aa1030c45a741c1d191"
+    },
+    {
+      "path": ".versat/sdd/process.md",
+      "source_path": "sdd/process.md",
+      "sha256": "6a5d8bc5083c078dcabaf5ab5571b36717062d539a72234273d12de915857274",
+      "git_blob": "0f66edc97c85510f485503d7de9aa3f3e7df94d6"
+    },
+    {
+      "path": ".versat/standards/core/language.md",
+      "source_path": "standards/core/language.md",
+      "sha256": "d733e54e7a7671eca6d748aba4ab78f4a0337e37f2ba4956378f6b2869fcca43",
+      "git_blob": "663ebf985cb6d03beaa3ec5cbe608d40f6581ba0"
+    },
+    {
+      "path": ".versat/standards/core/documentation.md",
+      "source_path": "standards/core/documentation.md",
+      "sha256": "eb385b7a6baa1c6007affcb4bb4f9101c9e430bb1277fc5607b4c5475c1d8052",
+      "git_blob": "d7fc05dda8a8e44483a2586b29aaa1ff6802ff2c"
+    },
+    {
+      "path": ".versat/standards/core/git.md",
+      "source_path": "standards/core/git.md",
+      "sha256": "3aae74a5c2c8818d6abcf3161ee99eeb7501abdab61ddfe11bc1d8f357577b07",
+      "git_blob": "3f4f31b190438d4593221989f970b9daed858592"
+    },
+    {
+      "path": ".versat/standards/core/security.md",
+      "source_path": "standards/core/security.md",
+      "sha256": "c16c9832ba9ae5a9b9673289b2c56df709873a1566ecfa52918735357dd096f8",
+      "git_blob": "138c68317da24a950d3bbf4fb3e54786d6f13aff"
+    },
+    {
+      "path": ".versat/standards/core/testing.md",
+      "source_path": "standards/core/testing.md",
+      "sha256": "adcd46c51e4b11f63fdc91a0577fa4987254f3f9a95a57a56f707feb8612b69e",
+      "git_blob": "f3e08003a454dd2421ee5d664b7ef31919b31d67"
+    },
+    {
+      "path": ".versat/standards/core/observability.md",
+      "source_path": "standards/core/observability.md",
+      "sha256": "a1dbb2936bda6eec0a7d42d4af2e910cb0f1b8e3a08f6f3fb7d8af71f6e83096",
+      "git_blob": "380735b4c9ee5211c33432a559a6cf221a0e40e9"
+    },
+    {
+      "path": ".versat/standards/core/ai.md",
+      "source_path": "standards/core/ai.md",
+      "sha256": "d9b0864fe2fc6d602c424fef4d43ce87990a870effb97afb464d461c1bc296c8",
+      "git_blob": "cc416f50750f8be4226ed40de92cfa3f53d7b119"
+    },
+    {
+      "path": ".versat/standards/profiles/agent.md",
+      "source_path": "standards/profiles/agent.md",
+      "sha256": "443ef12472f4621907c71efac492eb1eb664fbb4ace26f58b34ed4552a6e3f48",
+      "git_blob": "8e9c232aea95287a65403c442c5130eb93caec86"
+    },
+    {
+      "path": ".versat/standards/domains/finance.md",
+      "source_path": "standards/domains/finance.md",
+      "sha256": "33921aee357df52169511066d20b59e615b5147ab6829ff6bd77f33de94c6840",
+      "git_blob": "cdc2a43948cfaa216e3fdc27c1697c1466a5ae84"
+    },
+    {
+      "path": ".versat/standards/technologies/python.md",
+      "source_path": "standards/technologies/python.md",
+      "sha256": "d4ae5ad21c365984c2a720ae35beaddd18276ef5b05648dad9dd02395f79289f",
+      "git_blob": "37a286974de809c6dae7664fbe487ce06d5c1310"
+    },
+    {
+      "path": ".versat/sdd/schemas/proposal.schema.yaml",
+      "source_path": "sdd/schemas/proposal.schema.yaml",
+      "sha256": "8996eb017781bc388cda4ace3652845191d91d5f11b1eaced2c589cfb1d2f9eb",
+      "git_blob": "bfffdd8c60abad39aae25d60b25c55d07f7d8bae"
+    },
+    {
+      "path": ".versat/sdd/schemas/requirements.schema.yaml",
+      "source_path": "sdd/schemas/requirements.schema.yaml",
+      "sha256": "0f97c7d64f21a851581dbe8bebec27df5f52bd505f7b8f9da85b52c20ec7d8dd",
+      "git_blob": "d98b2f1c9642ed4a356896dd724096d06802b52a"
+    },
+    {
+      "path": ".versat/sdd/schemas/design.schema.yaml",
+      "source_path": "sdd/schemas/design.schema.yaml",
+      "sha256": "cf761123112b3a27618cf5fad739972dfd9676658e6ec351a1fb80da8d5b4e37",
+      "git_blob": "6f4b682d54884c32924675b9a21f50c7d68e170b"
+    },
+    {
+      "path": ".versat/sdd/schemas/tasks.schema.yaml",
+      "source_path": "sdd/schemas/tasks.schema.yaml",
+      "sha256": "9541c752cd8a7e290edb8feba402569e892c407d02d8a38c80eda707134078bd",
+      "git_blob": "346f5daa31f2db7900a7f9ab503ded3678d96b36"
+    },
+    {
+      "path": ".versat/sdd/templates/proposal.md",
+      "source_path": "sdd/templates/proposal.md",
+      "sha256": "96ee6f8c4ed05884d63d8a96f6223e9854d0eebd149b0e996fb649a8045f4fb5",
+      "git_blob": "8ae494297471e3ac63248a4901f1f87479c722c4"
+    },
+    {
+      "path": ".versat/sdd/templates/requirements.md",
+      "source_path": "sdd/templates/requirements.md",
+      "sha256": "a1f96c1d2e93babd2db8484cbdd477e43a788974cedf28ab33fcbc53caba1b98",
+      "git_blob": "86db516c19208693dad51a8811da9ffb8981510c"
+    },
+    {
+      "path": ".versat/sdd/templates/design.md",
+      "source_path": "sdd/templates/design.md",
+      "sha256": "01424910b742c4ad24115bf736cb964d866f63d034a76ca7272cc84529bccbfd",
+      "git_blob": "c4f0a132abc4787e944d407adecccecef2683c78"
+    },
+    {
+      "path": ".versat/sdd/templates/tasks.md",
+      "source_path": "sdd/templates/tasks.md",
+      "sha256": "1f7aa9ba7ac581173944a07248e36e2d1b18acd242658303065dc53379908d4c",
+      "git_blob": "d292525c2beaca28ccf3a489a354e9cf96dfb915"
+    }
+  ]
+}

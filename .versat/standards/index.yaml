@@ -1,0 +1,57 @@
+schema_version: 1
+
+core:
+  always:
+    - core/language.md
+    - core/documentation.md
+    - core/git.md
+    - core/security.md
+    - core/testing.md
+    - core/observability.md
+
+profiles:
+  software:
+    - profiles/software.md
+  agent:
+    - profiles/agent.md
+    - core/ai.md
+  hybrid:
+    - profiles/software.md
+    - profiles/agent.md
+    - core/ai.md
+  library:
+    - profiles/library.md
+  infrastructure:
+    - profiles/infrastructure.md
+
+domains:
+  marketing:
+    - domains/marketing.md
+  sales:
+    - domains/sales.md
+  finance:
+    - domains/finance.md
+  customer-success:
+    - domains/customer-success.md
+
+technologies:
+  python:
+    - technologies/python.md
+  fastapi:
+    - technologies/python.md
+    - technologies/fastapi.md
+  csharp:
+    - technologies/csharp.md
+  flutter:
+    - technologies/flutter.md
+  postgres:
+    - technologies/postgres.md
+
+criticality:
+  low: []
+  medium:
+    - core/observability.md
+  high:
+    - core/security.md
+    - core/testing.md
+    - core/observability.md

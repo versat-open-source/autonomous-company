@@ -1,0 +1,37 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Versat project manifest
+type: object
+additionalProperties: false
+required: [schema_version, project, technologies]
+properties:
+  schema_version:
+    const: 1
+  project:
+    type: object
+    additionalProperties: false
+    required: [name, description, profile, domain, owner, visibility, criticality]
+    properties:
+      name:
+        type: string
+        pattern: '^[a-z0-9]+(?:-[a-z0-9]+)*$'
+      description:
+        type: string
+        minLength: 1
+      profile:
+        enum: [software, agent, hybrid, library, infrastructure]
+      domain:
+        type: string
+        minLength: 1
+      owner:
+        type: string
+        minLength: 1
+      visibility:
+        enum: [private, internal, public]
+      criticality:
+        enum: [low, medium, high]
+  technologies:
+    type: array
+    uniqueItems: true
+    items:
+      type: string
+      minLength: 1
