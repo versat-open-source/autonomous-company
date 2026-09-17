@@ -16,7 +16,7 @@ tasks:
   - id: TASK-004
     description: Submit the migration for review and record CI and runtime verification limits.
     requirements: [REQ-003]
-    status: in-progress
+    status: completed
 ---
 
 # Tasks and evidence
@@ -25,4 +25,4 @@ Local implementation and verification completed on 2026-09-17. `bash scripts/val
 
 Workflow review covered out-of-scope requests, ambiguous company, absent authorization, missing connection, complete results, uncertain writes and partial recovery. The workflow binds the actual imported Skill and stops before any speculative retry or cross-company fallback. This is document inspection, not a live model evaluation.
 
-Upstream layout PR #5 was verified merged. No new Harness release is claimed. Consumer PR submission and CI are in progress. Native custom-agent loading and live MCP behavior remain unverified; no ERP call was made. Consumer review, merge and archival remain pending.
+Upstream layout PR #5 was verified merged. No new Harness release is claimed. Consumer [PR #9](https://github.com/versat-open-source/autonomous-company/pull/9) is open. The required `validate` check passed on Python 3.12.14 for implementation commit `f6f44b3`: [CI run](https://github.com/versat-open-source/autonomous-company/actions/runs/35242851932). The PR checks remain authoritative for subsequent evidence-only commits. Native custom-agent loading and live MCP behavior remain unverified; no ERP call was made. Consumer review, merge and archival remain pending.

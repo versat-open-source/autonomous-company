@@ -10,7 +10,7 @@ Local validation passed with Python 3.12.9: formatting/lint, 14 unit tests inclu
 
 The native role is `.codex/agents/operator.toml`; the operation is explicitly loaded from `workflows/versat-operation/workflow.md`. Static checks cover syntax, naming, layout, required workflow sections and local Skill bindings. Human inspection covers authority, outcomes and recovery; structural checks do not certify those semantics. The local client reports `codex-cli 0.154.0-alpha.6.2`, but native agent discovery and invocation remain unverified. No ERP operation was executed. No private company mapping is present in this checkout, so scanning against local company values is unavailable.
 
-Consumer PR review, CI and merge are tracked in `specs/changes/agent-template-migration/tasks.md`. Do not treat implementation as merged or operationally certified. The migration is not archived.
+Consumer [PR #9](https://github.com/versat-open-source/autonomous-company/pull/9) is open. The required `validate` check passed on Python 3.12.14 for implementation commit `f6f44b3`: [CI run](https://github.com/versat-open-source/autonomous-company/actions/runs/35242851932). The PR checks are authoritative for later evidence-only commits. Review and merge remain pending and are tracked in `specs/changes/agent-template-migration/tasks.md`. Do not treat implementation as merged or operationally certified. The migration is not archived.
 
 ## Bootstrap evidence — historical
 
