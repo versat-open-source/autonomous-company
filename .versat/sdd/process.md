@@ -23,6 +23,10 @@ Intent -> Proposal -> Requirements -> Design -> Tasks
 
 Small, low-risk changes may use concise documents. High-criticality or irreversible changes require deeper alternatives, rollout, rollback, observability and approval analysis. Proportionality changes depth, not traceability.
 
+## Workflow terminology
+
+The procedures in `sdd/workflows/` implement this development lifecycle. Consumer operational workflows compose Skills under the [Agent Artifact Standard](../standards/core/agent-artifacts.md); their definitions and changes pass through SDD but do not replace it. A workflow document describes execution and dependencies, not an automatically installed runtime.
+
 ## Directory convention
 
 ```text

@@ -6,6 +6,8 @@ The agent client supplies model execution, tools and secret storage. ERP authori
 
 The owner is `versat-open-source`, with repository maintenance assigned to `@elviszoz`. The profile is agent, domain finance, criticality high; Python is used only for local checks and the routing gate. There is no hosted database, backend, deployment, scheduler or telemetry exporter.
 
-The `.versat/` directory contains applicable immutable source snapshots, schemas, templates and provenance from Harness 0.2.0. CI resolves the selected Standards from the versioned index and verifies hashes. Imported skill content remains unchanged; project-specific extensions are separate.
+The `.versat/` directory contains applicable immutable source snapshots, schemas, templates and provenance from Harness commit `9260d3a04f658b6eeec86a8dc88563d2051cb09d` (VERSION 0.2.0, Unreleased changes). CI resolves the selected Standards from the versioned index and verifies hashes. Imported skill content remains unchanged; project-specific extensions are separate.
+
+The [agent architecture](agent-project.md) maps the reusable Skill in `.agents/skills/`, the native role definition in `.codex/agents/operator.toml` and the explicitly loaded operational workflow in `workflows/versat-operation/workflow.md`. Native role loading remains unverified. There is no workflow engine or automatic discovery of workflow Markdown. [ADR-0002](../decisions/0002-consumer-agent-layout.md) records the artifact migration and exact revision adoption.
 
 See ADR-0001, the SDD bootstrap change and `docs/readiness.md` for the adoption decision and remaining operational gates.

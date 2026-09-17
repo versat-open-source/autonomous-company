@@ -15,7 +15,7 @@ If the file is missing, malformed, empty, duplicated or contains example placeho
 1. Identify the operating company from its name or document in the current request. Distinguish it from a supplier/customer mentioned as the subject of a query. Normalize only punctuation, whitespace and letter case; retain leading zeros and check digits.
 2. An explicit current operating company replaces earlier context. Reuse the previous company only for an unambiguous continuation, and resolve it again against the current local mapping.
 3. If name and document conflict, the request is ambiguous or no current mapping matches, ask which configured company applies before calling any Versat tool.
-4. Run `scripts/resolve_company.py` with the resolved context and actual available MCP connection names before the first call for that company/operation. See `workflows/versat-operation.md`. The helper is a local gate, not an MCP client. A blocked result prohibits the call.
+4. Run `scripts/resolve_company.py` with the resolved context and actual available MCP connection names before the first call for that company/operation. See `workflows/versat-operation/workflow.md`. The helper is a local gate, not an MCP client. A blocked result prohibits the call.
 5. Use only tools belonging to the selected connection. Discover actual tools and their provenance; never invent names or silently fall back to another company if a tool or connection is unavailable.
 6. Before financial writes or external submissions, establish explicit user authorization covering the target company and action. An already explicit, complete user instruction is authorization; do not ask redundantly. Resolve required fields using that company's tools and follow the original skill's write rules.
 7. Identify the company in query results and write summaries. Verify the result in the same connection. Report partial success; do not blindly retry writes.
@@ -28,6 +28,6 @@ Keep company context within the active conversation; do not persist operational 
 
 ## Roles, operations and lifecycle
 
-Use `agents/operator.md` for role and permission boundaries, `docs/operations.md` for approvals, telemetry and recovery, and `evals/README.md` for evaluation scope. No unattended financial execution is enabled by this repository.
+Use `.codex/agents/operator.toml` for role and permission boundaries, `docs/operations.md` for approvals, telemetry and recovery, and `evals/README.md` for evaluation scope. Explicitly load `workflows/versat-operation/workflow.md` before ERP operations; workflow Markdown does not execute automatically. See `docs/architecture/agent-project.md` for artifact ownership and runtime verification requirements. No unattended financial execution is enabled by this repository.
 
 Preserve the local mapping during updates. Update Harness snapshots only through a versioned migration and reviewed PR. Keep product specifications synchronized and archive completed SDD changes only after merge and validation.

@@ -1,6 +1,6 @@
 {
   "harness_version": "0.2.0",
-  "harness_commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f",
+  "harness_commit": "9260d3a04f658b6eeec86a8dc88563d2051cb09d",
   "template_modules": [
     "base",
     "agent"
@@ -10,8 +10,8 @@
     {
       "path": ".versat/standards/index.yaml",
       "source_path": "standards/index.yaml",
-      "sha256": "47f312606a1ae428c6e4a68a3803490eea32eb42a7ee8011e07017ae9c44b0d0",
-      "git_blob": "190924cfce93e8b0720c43ca9c9fad9b727a7c4e"
+      "sha256": "6cdfe0147b4ca5d27b3e81f2186d4e1360d7bc89f63cd61b745a23ea748423c0",
+      "git_blob": "953be36595e6fb65143054882c7ac897c12c5934"
     },
     {
       "path": ".versat/schemas/project.schema.yaml",
@@ -28,20 +28,20 @@
     {
       "path": ".versat/project-templates/agent/structure.yaml",
       "source_path": "project-templates/agent/structure.yaml",
-      "sha256": "27b63b9f084c011219fb436398fce6ff671565640d86b9db62c191d581b7a356",
-      "git_blob": "8ef2d6de380bb0c02ac50aa1030c45a741c1d191"
+      "sha256": "4440d6dc608c90ef393be06fd391e3e4f44c2e95a249eca39662cf9da9fc6f9b",
+      "git_blob": "3218f12990b590c8e737cd5f5776ea7aa5704074"
     },
     {
       "path": ".versat/sdd/process.md",
       "source_path": "sdd/process.md",
-      "sha256": "6a5d8bc5083c078dcabaf5ab5571b36717062d539a72234273d12de915857274",
-      "git_blob": "0f66edc97c85510f485503d7de9aa3f3e7df94d6"
+      "sha256": "b1f015d986f5336c679c3ea59355d1b782554614e650b529a376753ecea7195e",
+      "git_blob": "0782708a44196cdbdc766b5dcd3d7d69d56ff9b3"
     },
     {
       "path": ".versat/standards/core/language.md",
       "source_path": "standards/core/language.md",
-      "sha256": "d733e54e7a7671eca6d748aba4ab78f4a0337e37f2ba4956378f6b2869fcca43",
-      "git_blob": "663ebf985cb6d03beaa3ec5cbe608d40f6581ba0"
+      "sha256": "a287cabaf0609331541afd18cc1b3f3d1aead42642446263fe44bc3bc9100f3f",
+      "git_blob": "de0fcdaab513fe15c4ea1a6550ccc046b0f4ae85"
     },
     {
       "path": ".versat/standards/core/documentation.md",
@@ -52,8 +52,8 @@
     {
       "path": ".versat/standards/core/git.md",
       "source_path": "standards/core/git.md",
-      "sha256": "3aae74a5c2c8818d6abcf3161ee99eeb7501abdab61ddfe11bc1d8f357577b07",
-      "git_blob": "3f4f31b190438d4593221989f970b9daed858592"
+      "sha256": "057fd5446aca2327f5e955124ca3d21fa33488ac7fac5650a80cf804b990baa6",
+      "git_blob": "eb041a2ba254583e36f0f2aa3b781a4f5b752c61"
     },
     {
       "path": ".versat/standards/core/security.md",
@@ -82,8 +82,8 @@
     {
       "path": ".versat/standards/profiles/agent.md",
       "source_path": "standards/profiles/agent.md",
-      "sha256": "443ef12472f4621907c71efac492eb1eb664fbb4ace26f58b34ed4552a6e3f48",
-      "git_blob": "8e9c232aea95287a65403c442c5130eb93caec86"
+      "sha256": "7fda868ab97071832b9bed517d65c802b6e2c723d01ea55219acca9d66032ce9",
+      "git_blob": "f966bcdb0babaaab514e6ee39663dd8c36a38149"
     },
     {
       "path": ".versat/standards/domains/finance.md",
@@ -124,8 +124,8 @@
     {
       "path": ".versat/sdd/templates/proposal.md",
       "source_path": "sdd/templates/proposal.md",
-      "sha256": "96ee6f8c4ed05884d63d8a96f6223e9854d0eebd149b0e996fb649a8045f4fb5",
-      "git_blob": "8ae494297471e3ac63248a4901f1f87479c722c4"
+      "sha256": "02b86f3fe593ce9f878192aa3c581a9648a46ab71f1302e1880145d175d3552d",
+      "git_blob": "6e8a42133f33db74282faa4f81ac6edd7226a65d"
     },
     {
       "path": ".versat/sdd/templates/requirements.md",
@@ -144,6 +144,28 @@
       "source_path": "sdd/templates/tasks.md",
       "sha256": "1f7aa9ba7ac581173944a07248e36e2d1b18acd242658303065dc53379908d4c",
       "git_blob": "d292525c2beaca28ccf3a489a354e9cf96dfb915"
+    },
+    {
+      "path": ".versat/standards/core/agent-artifacts.md",
+      "source_path": "standards/core/agent-artifacts.md",
+      "sha256": "cb54e704af8d32f42b302eaaefe06fa289ca2eb8136960e3330af49614f4444e",
+      "git_blob": "8bfe47175e79de9302dc78584af2fb4d685a5d8f"
+    },
+    {
+      "path": ".versat/project-templates/artifacts/agent.toml",
+      "source_path": "project-templates/artifacts/agent.toml",
+      "sha256": "add89fb32cb0d04e2559e99f8398a0fb8b0f828fc350b5e4687a8e51e0004697",
+      "git_blob": "3dccff7a8141493106c4de71ee8cdefc1a5075a6"
+    },
+    {
+      "path": ".versat/project-templates/artifacts/workflow.md",
+      "source_path": "project-templates/artifacts/workflow.md",
+      "sha256": "e38e4faf818825032bd73f41798ffe18897b14adca8684eaa09c856bceeaa407",
+      "git_blob": "101a1f0b3465d9698da1b99ff09b20cece454b3b"
     }
-  ]
+  ],
+  "harness_revision_status": "unreleased",
+  "previous_harness_commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f",
+  "migration": "agent-template-migration",
+  "migrated_at": "2026-09-17"
 }

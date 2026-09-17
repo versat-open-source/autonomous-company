@@ -4,6 +4,7 @@ core:
   always:
     - core/language.md
     - core/documentation.md
+    - core/agent-artifacts.md
     - core/git.md
     - core/security.md
     - core/testing.md

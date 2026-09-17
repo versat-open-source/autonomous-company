@@ -1,0 +1,9 @@
+# Authoring template: replace the name, description and instructions before use.
+name = "agent-name"
+description = "Replace with the role and when this agent should be selected."
+developer_instructions = """
+Replace this text with the agent's responsibility, inputs and expected result.
+Read the project's AGENTS.md and resolved Standards before acting.
+For a supplied workflow, load its document and verify its dependencies before execution.
+Return the outcome, evidence and unresolved prerequisites to the caller.
+"""
