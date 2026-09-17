@@ -2,7 +2,9 @@
 
 ## Versat AI Harness
 
-Applicable Standards, schemas, agent structure and SDD templates/process are exact snapshots from version **0.2.0**, commit **85194bf7fb6c708de6a0f29acabb90eaaa1d055f**. Their origin is the installed Versat AI Harness package; `.versat/bootstrap.json` records each source path and digest. The project owner explicitly authorized public distribution of these applicable artifacts on 2026-09-12. No general license grant is inferred from that authorization.
+Applicable Standards, schemas, agent structure, authoring references and SDD templates/process are exact snapshots from commit **9260d3a04f658b6eeec86a8dc88563d2051cb09d** of `versat-private/versat-ai-harness`. Its VERSION is **0.2.0**, with the new definitions recorded as **Unreleased**; no new release is implied. The source is the matching local Git checkout, not the unchanged installed Plugin package. `.versat/bootstrap.json` records each source path, digest, Git blob and the previous pin **85194bf7fb6c708de6a0f29acabb90eaaa1d055f**.
+
+The project owner explicitly authorized public distribution of applicable Harness artifacts on 2026-09-12 and requested this template migration in the current task. The exact revision adoption is documented in ADR-0002. No general license grant is inferred from that authorization.
 
 ## Versat MCP skill
 

@@ -2,8 +2,8 @@ schema_version: 1
 profile: agent
 extends: [base]
 directories:
-  - agents
-  - skills
+  - .agents/skills
+  - .codex/agents
   - workflows
   - evals
   - tests

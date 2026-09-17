@@ -11,6 +11,7 @@ from pathlib import Path
 
 import jsonschema
 import yaml
+from validate_agent_artifacts import validate_agent_artifacts
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -54,16 +55,21 @@ def validate() -> list[dict[str, str]]:
     for item in provenance["artifacts"]:
         content = (ROOT / item["path"]).read_bytes()
         require(hashlib.sha256(content).hexdigest() == item["sha256"], "Snapshot drift")
+        blob = hashlib.sha1(f"blob {len(content)}\0".encode() + content).hexdigest()
+        require(blob == item["git_blob"], "Source Git blob drift")
     profile = read_yaml(".versat/project-templates/agent/structure.yaml")
     for directory in profile["directories"]:
         require((ROOT / directory).is_dir(), f"Missing profile directory: {directory}")
+    validate_agent_artifacts(ROOT)
     for name in (
         "AGENTS.md",
         "README.md",
         "docs/README.pt-BR.md",
         "docs/README.es.md",
         "docs/architecture/overview.md",
+        "docs/architecture/agent-project.md",
         "docs/decisions/0001-governed-agent-workspace.md",
+        "docs/decisions/0002-consumer-agent-layout.md",
         "docs/operations.md",
         "docs/readiness.md",
         ".github/CODEOWNERS",
@@ -115,6 +121,8 @@ def validate() -> list[dict[str, str]]:
         r"(?:gh[pousr]_[A-Za-z0-9]{30,}|-----BEGIN (?:RSA |EC )?PRIVATE KEY)"
     )
     for path in candidates:
+        if not (ROOT / path).exists():
+            continue  # Tracked deletions have no working-tree content to scan.
         text = (ROOT / path).read_text(errors="replace")
         require(
             not any(value and value in text for value in forbidden),
@@ -123,6 +131,12 @@ def validate() -> list[dict[str, str]]:
         require(not secret_pattern.search(text), f"Possible credential in: {path}")
     return [
         {"check": "schemas_standards_provenance_sdd", "status": "pass"},
+        {"check": "consumer_artifact_structure_and_dependencies", "status": "pass"},
+        {
+            "check": "native_custom_agent_loading",
+            "status": "unable-to-verify",
+            "detail": "TOML validation does not exercise native Codex agent discovery",
+        },
         {"check": "private_file_exclusion_and_secret_patterns", "status": "pass"},
         {
             "check": "local_company_values_scan",

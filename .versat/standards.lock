@@ -2,14 +2,14 @@
   "schema_version": 1,
   "harness": {
     "version": "0.2.0",
-    "commit": "85194bf7fb6c708de6a0f29acabb90eaaa1d055f"
+    "commit": "9260d3a04f658b6eeec86a8dc88563d2051cb09d"
   },
-  "resolved_at": "2026-09-12",
+  "resolved_at": "2026-09-17",
   "standards": [
     {
       "path": "core/language.md",
       "version": "0.2.0",
-      "digest": "sha256:d733e54e7a7671eca6d748aba4ab78f4a0337e37f2ba4956378f6b2869fcca43"
+      "digest": "sha256:a287cabaf0609331541afd18cc1b3f3d1aead42642446263fe44bc3bc9100f3f"
     },
     {
       "path": "core/documentation.md",
@@ -17,9 +17,14 @@
       "digest": "sha256:eb385b7a6baa1c6007affcb4bb4f9101c9e430bb1277fc5607b4c5475c1d8052"
     },
     {
+      "path": "core/agent-artifacts.md",
+      "version": "0.2.0",
+      "digest": "sha256:cb54e704af8d32f42b302eaaefe06fa289ca2eb8136960e3330af49614f4444e"
+    },
+    {
       "path": "core/git.md",
       "version": "0.2.0",
-      "digest": "sha256:3aae74a5c2c8818d6abcf3161ee99eeb7501abdab61ddfe11bc1d8f357577b07"
+      "digest": "sha256:057fd5446aca2327f5e955124ca3d21fa33488ac7fac5650a80cf804b990baa6"
     },
     {
       "path": "core/security.md",
@@ -44,7 +49,7 @@
     {
       "path": "profiles/agent.md",
       "version": "0.2.0",
-      "digest": "sha256:443ef12472f4621907c71efac492eb1eb664fbb4ace26f58b34ed4552a6e3f48"
+      "digest": "sha256:7fda868ab97071832b9bed517d65c802b6e2c723d01ea55219acca9d66032ce9"
     },
     {
       "path": "domains/finance.md",

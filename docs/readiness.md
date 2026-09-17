@@ -2,13 +2,27 @@
 
 Bootstrap date: 2026-09-12. Owner: `versat-open-source`; maintainer: `@elviszoz`.
 
-## Local governance
+## Agent template migration — 2026-09-17
+
+The current candidate uses Harness revision `9260d3a04f658b6eeec86a8dc88563d2051cb09d` (VERSION 0.2.0, Unreleased changes) under ADR-0002. The [upstream layout PR #5](https://github.com/versat-private/versat-ai-harness/pull/5) was verified merged; that does not create a new versioned release. The installed Plugin remains unchanged.
+
+Local validation passed with Python 3.12.9: formatting/lint, 14 unit tests including the 15 existing routing scenarios and nine artifact checks, resolved schemas/Standards, all 26 source snapshots and privacy exclusions. CI retains the pinned Python 3.12.14 runtime. Source contents were compared with Git objects at the exact upstream commit. The imported Skill and routing gate are unchanged.
+
+The native role is `.codex/agents/operator.toml`; the operation is explicitly loaded from `workflows/versat-operation/workflow.md`. Static checks cover syntax, naming, layout, required workflow sections and local Skill bindings. Human inspection covers authority, outcomes and recovery; structural checks do not certify those semantics. The local client reports `codex-cli 0.154.0-alpha.6.2`, but native agent discovery and invocation remain unverified. No ERP operation was executed. No private company mapping is present in this checkout, so scanning against local company values is unavailable.
+
+Consumer PR review, CI and merge are tracked in `specs/changes/agent-template-migration/tasks.md`. Do not treat implementation as merged or operationally certified. The migration is not archived.
+
+## Bootstrap evidence — historical
+
+The following records describe the bootstrap on 2026-09-12; they are historical evidence, not a fresh assessment of GitHub controls or the current branch state.
+
+### Local governance
 
 Identity, Standards snapshots, exact commit provenance, base + agent composition and SDD are present. Local validation passed on Python 3.12.14: formatting/lint, five unit-test groups including 15 fictional routing scenarios, project/SDD schemas, exact Standards resolution and snapshot integrity, local-data exclusion and a scan of public candidate files. All 23 imported Harness artifacts were verified against their Git blob hashes in the pinned upstream commit.
 
 The installed Harness 0.2.0 validation entry point failed because its compatibility manifest contains `./skills` where the validator expects `./skills/`. The package was not modified to hide this failure. The project uses its own consumer validator for schemas, resolution, digests, privacy and SDD traceability; a passing consumer check does not turn the installed package check into a pass.
 
-## Repository controls
+### Repository controls
 
 - Public repository: https://github.com/versat-open-source/autonomous-company.
 - Bootstrap PR: https://github.com/versat-open-source/autonomous-company/pull/1. The full project is on `bootstrap/project-bootstrap`; `main` contains the seed `.gitignore` until review and merge.
